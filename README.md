@@ -27,6 +27,8 @@ Este proyecto consiste en una aplicación de consulta del tipo de cambio de mone
 - **Maven** para gestionar dependencias en el backend.
 - **npm** o **yarn** para gestionar dependencias en el frontend.
 
+  ## Desarrollado por: Brandon Nájera
+
 ### Clonar el Repositorio
 ```bash
 git clone https://github.com/usuario/currency-exchange-rate.git
