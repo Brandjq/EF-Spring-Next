@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Proyecto de Consulta de Tipo de Cambio - Banco de Guatemala
 
-## Getting Started
+Este proyecto consiste en dos aplicaciones: un **backend en Spring Boot** que consume un servicio SOAP para obtener el tipo de cambio del Banco de Guatemala, y un **frontend en Next.js** que muestra esta información al usuario.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Requisitos Previos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Java 11** o superior
+- **Node.js** (versión 14 o superior)
+- **Maven** para el backend (o `mvnw` incluido en el proyecto)
+- **npm** o **yarn** para el frontend
+- **Base de Datos** (por ejemplo, MySQL o PostgreSQL) si deseas utilizar almacenamiento persistente para la información consultada.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Pasos para Ejecutar el Proyecto en Local
 
-## Learn More
+### 1. Clonar el Repositorio
 
-To learn more about Next.js, take a look at the following resources:
+1. Abre una terminal o línea de comandos.
+2. Clona el repositorio en tu máquina local usando el siguiente comando:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git
+   cd tu-repositorio
+2. Instala las dependencias:
+   ```bash
+    npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Configura tu base de datos PostgreSQL y actualiza el archivo .env con tus credenciales.
 
-## Deploy on Vercel
+4. Inicia el servidor de desarrollo:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+    npm run dev
